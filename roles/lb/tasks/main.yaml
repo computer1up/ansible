@@ -1,0 +1,26 @@
+---
+- name: create load balancer
+  azure_rm_loadbalancer:
+    resource_group: zuyrg00006
+    name: NW-LOAD-003
+    frontend_ip_configurations:
+      - name: nw-pubconf-003
+        public_ip_address: NW-PUB-003
+    backend_address_pools:
+      - name: NW-POOL-003
+    probes:
+      - name: nw-probe-003
+        port: 80
+    load_balancing_rules:
+      - name: HTTP
+        frontend_ip_configuration: nw-pubconf-003
+        backend_address_pool: NW-POOL-003
+        frontend_port: 80
+        backend_port: 80
+        probe: nw-probe-003
+      - name: HTTPS
+        frontend_ip_configuration: nw-pubconf-003
+        backend_address_pool: NW-POOL-003
+        frontend_port: 443
+        backend_port: 443
+        probe: nw-probe-003

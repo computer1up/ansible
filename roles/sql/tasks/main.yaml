@@ -1,0 +1,15 @@
+---
+- name: include vars
+  include_vars:
+    file: ~/Documents/ansible/vars/secret.yaml
+- name: Create (or update) SQL Server
+  azure_rm_sqlserver:
+    resource_group: zuyrg00006
+    name: nw-db-s002
+    admin_username: gr06admin
+    admin_password: "{{adminpass}}"
+- name: Create (or update) SQL Database
+  azure_rm_sqldatabase:
+    resource_group: zuyrg00006
+    server_name: nw-db-s002
+    name: nw-db-002

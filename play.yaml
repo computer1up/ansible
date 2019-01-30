@@ -3,7 +3,15 @@
   hosts: localhost
   connection: local
   roles:
+    - role: vnet
+    - role: nsg001
+    - role: nsg002
+    - role: pubip
+    - role: storageaccount
+    - role: subnet-ba
+    - role: subnet-fr
     - role: http003
+    - role: http004
 - name: IIS install
   hosts: webservers
   roles:

@@ -3,4 +3,4 @@
   azure_rm_publicipaddress:
     resource_group: zuyrg00006
     allocation_method: Static
-    name: NW-PUB-001
+    name: NW-PUB-002

@@ -5,10 +5,13 @@
 - name: Create virtual network inteface card
   azure_rm_networkinterface:
     resource_group: zuyrg00006
-    name: NW-VNIC-001
+    name: NW-VNIC-003
     virtual_network: NW-VNET-001
     subnet: Front-end
     security_group: NW-NSG-001
+    ip_configurations:
+      name: NW-IPCONF-003
+      load_balancer_backend_address_pools: NW-POOL-003
   register: output_ip_configurations
 - name: Dump private IP for VM which will be created
   debug:
@@ -20,14 +23,14 @@
 - name: Create VM (Webserver 003)
   azure_rm_virtualmachine:
     resource_group: zuyrg00006
-    name: NW-STEP-S001
+    name: NW-HTTP-S003
     os_type: Windows
     vm_size: Standard_B2s
-    storage_account: nwstorage02
-    storage_container: nw-step-001
+    storage_account: nwstorage04
+    storage_container: nw-http-s003
     admin_username: gr00006admin
     admin_password: "{{ adminpass }}"
-    network_interfaces: NW-VNIC-001
+    network_interfaces: NW-VNIC-003
     image:
       offer: WindowsServer
       publisher: MicrosoftWindowsServer
