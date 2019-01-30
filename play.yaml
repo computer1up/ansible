@@ -21,5 +21,5 @@
 - name: IIS Install
   hosts: webservers
   roles:
-    - roles: addc-join
-    - roles: iis
+    - role: addc-join
+    - role: iis
