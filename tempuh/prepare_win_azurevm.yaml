@@ -1,0 +1,22 @@
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create VM
+      azure_rm_virtualmachine:
+        resource_group: zuyrg00006
+        name: NW-TEST-S001
+        os_type: Windows
+        vm_size: Standard_D1s
+        storage_account: nwstorage001 
+        storage_container: nw-test-s001
+        admin_username: gr00006admin
+        admin_password: <knip> # To Do: retrieve password from vault
+        network_interfaces: nwtestnic001
+        image:
+          offer: WindowsServer
+          publisher: MicrosoftWindowsServer
+          sku: '2016-Datacenter'
+          version: latest
+    
+    

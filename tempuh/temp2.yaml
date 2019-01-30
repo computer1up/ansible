@@ -1,0 +1,75 @@
+    - name: Create storage account
+      azure_rm_storageaccount:
+        resource_group: zuyrg00006
+        name: rdteststorage01
+        account_type: Standard_LRS 
+    - name: Create virtual network
+      azure_rm_virtualnetwork:
+        resource_group: zuyrg00006
+        name: rdtestvnet01
+        address_prefixes: "10.0.0.0/16"
+    - name: Add subnet Frontend
+      azure_rm_subnet:
+        resource_group: zuyrg00006
+        name: rdtestsubnet-front
+        address_prefix: "10.0.1.0/24"
+        virtual_network: rdtestvnet01
+    - name: Add subnet backend
+      azure_rm_subnet:
+        resource_group: zuyrg00006
+        name: rdtestsubnet-back
+        address_prefix: "10.0.2.0/24"
+        virtual_network: rdtestvnet01
+    - name: Create public IP address
+      azure_rm_publicipaddress:
+        resource_group: zuyrg00006
+        allocation_method: Static
+        name: "{{'rdtestpubip0' + item}}"
+      with_sequence: start=0 end={{vmnum}}
+    - name: Create Network Security Group that allows SSH
+      azure_rm_securitygroup:
+        resource_group: zuyrg00006
+        name: rdtestsecgr01
+        rules:
+          - name: WinRM
+            protocol: Tcp
+            destination_port_range: 5985
+            access: Allow
+            priority: 101
+            direction: Inbound
+          - name: RDP
+            protocol: Tcp
+            destination_port_range: 3389
+            access: Allow
+            priority: 102
+            direction: Inbound
+    - name: Create virtual network inteface card
+      azure_rm_networkinterface:
+        resource_group: zuyrg00006
+        name: "{{'rdtestnic0' + item}}"
+        virtual_network: rdtestvnet01
+        subnet: rdtestsubnet-front
+        security_group: rdtestsecgr01
+      register: output_private_ip
+      with_sequence: start=0 end={{vmnum}}
+
+
+
+
+      - name: Create VM
+      azure_rm_virtualmachine:
+        resource_group: zuyrg00006
+        name: "{{'rdtestvm0' + item}}"
+        os_type: Windows
+        vm_size: Standard_D1s
+        storage_account: rdteststorage01  
+        storage_container: "{{'rdtestvm0' + item}}"
+        admin_username: gr00006admin
+        admin_password: Zuyd@2019
+        network_interfaces: "{{'rdtestnic0' + item}}"
+        image:
+          offer: WindowsServer
+          publisher: MicrosoftWindowsServer
+          sku: '2016-Datacenter'
+          version: latest
+      with_sequence: start=0 end={{vmnum}}

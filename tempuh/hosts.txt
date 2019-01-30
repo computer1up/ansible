@@ -1,0 +1,24 @@
+# Ansible example Hosts file
+# Written by RD
+
+# Default hosts go here
+[default]
+23.97.195.186
+
+# Azure groups go here
+[azure]
+webservers
+database
+domaincontrollers
+
+[webservers]
+10.1.10.2
+10.1.10.3
+
+[database]
+10.2.10.2
+10.2.10.3
+
+[domaincontrollers]
+10.2.10.4
+10.2.10.5

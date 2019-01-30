@@ -1,0 +1,16 @@
+---
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create virtual network inteface card
+      azure_rm_networkinterface:
+        resource_group: zuyrg00006
+        name: rdtestnic01
+        virtual_network: NW-VNET-001
+        subnet: Front-end
+        security_group: NW-NSG-001
+      register: output_ip_configurations
+    - name: Dump private IP for VM which will be created
+      debug:
+        msg: "The private IP is '{{output_ip_configurations.state.ip_configurations.0.private_ip_address}}'."

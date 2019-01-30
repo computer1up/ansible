@@ -1,0 +1,20 @@
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Create VM
+    azure_rm_virtualmachine:
+      resource_group: zuyrg00006
+      name: rdtestvm01
+      vm_size: Standard_B1s
+      admin_username: rd
+      ssh_password_enabled: false
+      ssh_public_keys:
+        - path: /home/rd/.ssh/authorized_keys
+          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCwW2vYA4yTvtZmCPYQNEbOD53ayTXJn6Jb3+Lm7psxhovXdo2ydLQHOfsILlHcO7dSofc/nytXzZR25q/P1tIoV58M11oR46PbdbNSoeRtAoiXI7YvQKtCbJRXgABkWzgGTdpE8BDE2ssG/NoCJHLK8iY+cCWGpDnDUVad4GvyDw== remydoon@rd-MacBook-Pro.local
+      network_interfaces: rdtestnic01
+      image:
+        offer: UbuntuServer
+        publisher: Canonical
+        sku: '18.04-LTS'
+        version: latest

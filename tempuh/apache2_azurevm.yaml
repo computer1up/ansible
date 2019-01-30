@@ -1,0 +1,13 @@
+- name: Install Apache2 on specified vm's
+  hosts: azure
+  connection: local
+  become: yes
+  tasks: 
+    - name: Ping all vm's in azure rg
+      ping: 
+    - name: install Apache2 on these machines
+      apt: 
+        update_cache: yes
+      apt: 
+        name: Apache2
+        state: present

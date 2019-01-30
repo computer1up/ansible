@@ -1,0 +1,66 @@
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create storage account
+      azure_rm_storageaccount:
+        resource_group: zuyrg00006
+        name: rdteststorage01
+        account_type: Standard_LRS 
+    - name: Create virtual network
+      azure_rm_virtualnetwork:
+        resource_group: zuyrg00006
+        name: rdtestvnet01
+        address_prefixes: "10.0.0.0/16"
+    - name: Add subnet
+      azure_rm_subnet:
+        resource_group: zuyrg00006
+        name: rdtestsubnet01
+        address_prefix: "10.0.1.0/24"
+        virtual_network: rdtestvnet01
+    - name: Create public IP address
+      azure_rm_publicipaddress:
+        resource_group: zuyrg00006
+        allocation_method: Static
+        name: rdtestpubip01
+      register: output_ip_address
+    - name: Dump public IP for VM which will be created
+      debug:
+        msg: "The public IP is {{ output_ip_address.state.ip_address }}."
+    - name: Create Network Security Group that allows SSH
+      azure_rm_securitygroup:
+        resource_group: zuyrg00006
+        name: rdtestsecgr01
+        rules:
+          - name: SSH
+            protocol: Tcp
+            destination_port_range: 22
+            access: Allow
+            priority: 101
+            direction: Inbound
+    - name: Create virtual network inteface card
+      azure_rm_networkinterface:
+        resource_group: zuyrg00006
+        name: rdtestnic01
+        virtual_network: rdtestvnet01
+        subnet: rdtestsubnet01
+        public_ip_name: rdtestpubip01
+        security_group: rdtestsecgr01
+    - name: Create VM
+      azure_rm_virtualmachine:
+        resource_group: zuyrg00006
+        name: rdtestvm01
+        vm_size: Standard_B1s
+        storage_account: rdteststorage01  
+        storage_container: rdtestvm01
+        admin_username: rd
+        ssh_password_enabled: false
+        ssh_public_keys:
+          - path: /home/rd/.ssh/authorized_keys
+            key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD9h3qw5Bdqgp/1aA40GtibL3uNelLpIKB/g8wwLwfmwPYI3jWk9R1m3ne9/jzSw4HbgAkITwXUr4UBugGI7/JsMbwBn+RSJNB2HNiuhLstqtq5VcgNrplmmYWNr5MqT/tAfX4mXBum5NZ5i83HAihKSV5Yit6KDmc2Mn5s6qWudIiY2N9xZZf7iLm2FSDsCEY0LtG7FhxW5N1snZQGAZQJG9rsRJuVSVSpSSwQOy1nCF9RkqXcIiuzCXjuUE8fnvHiJksjECCiioaqiapDw25GQHksWAmlexdFKxnW214xuRz6pPqkvdu4eknPorrDNySnwXENIW5jINsIteLaV1xX remydoon@rd-MacBook-Pro-9.local
+        network_interfaces: rdtestnic01
+        image:
+          offer: UbuntuServer
+          publisher: Canonical
+          sku: '18.04-LTS'
+          version: latest

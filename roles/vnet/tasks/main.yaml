@@ -1,0 +1,6 @@
+---
+- name: Create virtual network
+  azure_rm_virtualnetwork:
+    resource_group: zuyrg00006
+    name: NW-VNET-001
+    address_prefixes: "10.1.0.0/22"

@@ -1,0 +1,218 @@
+Collecting azure
+  Downloading https://files.pythonhosted.org/packages/5a/5e/f94bd8091ab0ccc68ee902e188d4e8cd3b38dc77155a1c187cbf4767d0e4/azure-4.0.0-py2.py3-none-any.whl
+Collecting azure-cosmosdb-table~=1.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/55/81/f57fea1cdab4490bc185e48a4db2451795fde37eb8fed1808e7e8fd2c99e/azure_cosmosdb_table-1.0.5-py2.py3-none-any.whl (80kB)
+Collecting azure-servicemanagement-legacy~=0.20.6 (from azure)
+  Downloading https://files.pythonhosted.org/packages/a3/2b/0813d459df7ec04bb8c6a250882ee88b672a5f8d16a237978c89436a053e/azure_servicemanagement_legacy-0.20.6-py2.py3-none-any.whl (78kB)
+Collecting azure-storage-queue~=1.3 (from azure)
+  Downloading https://files.pythonhosted.org/packages/72/94/4db044f1c155b40c5ebc037bfd9d1c24562845692c06798fbe869fe160e6/azure_storage_queue-1.4.0-py2.py3-none-any.whl
+Collecting azure-applicationinsights~=0.1.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/3b/f7/3af9ce8a9a597998629436889cf5d69d1a0c96713e795fd372e4af785635/azure_applicationinsights-0.1.0-py2.py3-none-any.whl (104kB)
+Collecting azure-datalake-store~=0.0.18 (from azure)
+  Downloading https://files.pythonhosted.org/packages/22/a8/f17cf020c246b19b102a3570761315bf7245a5b27a20973966c5ce6c4e97/azure_datalake_store-0.0.39-py2.py3-none-any.whl (51kB)
+Collecting azure-keyvault~=1.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/80/37/e80f577570b32648c4b88c8c48a46501a4868ae4c8d905774fd02c2b01fc/azure_keyvault-1.1.0-py2.py3-none-any.whl (352kB)
+Collecting azure-servicebus~=0.21.1 (from azure)
+  Downloading https://files.pythonhosted.org/packages/b8/de/47c0df32b57512ac9640ba239c7eeca22cb908bd8b645235729ec4f37196/azure_servicebus-0.21.1-py2.py3-none-any.whl
+Collecting azure-storage-file~=1.3 (from azure)
+  Downloading https://files.pythonhosted.org/packages/c9/33/6c611563412ffc409b2413ac50e3a063133ea235b86c137759774c77f3ad/azure_storage_file-1.4.0-py2.py3-none-any.whl
+Collecting azure-mgmt~=4.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/19/8e/6fa401c437579127e726487582a9861fef09022c4ab50901bb499a8e4fc1/azure_mgmt-4.0.0-py2.py3-none-any.whl
+Collecting azure-graphrbac~=0.40.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/89/0a/29f7e2914033e2536026b8f0d7f8deb1edda68c9a93ce4757b2b1e39568b/azure_graphrbac-0.40.0-py2.py3-none-any.whl (63kB)
+Collecting azure-servicefabric~=6.3.0.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/2c/d9/3e33ad19eb57988dff3aac06bab241736f86dc692a38c5ff6bb6fb959243/azure_servicefabric-6.3.0.0-py2.py3-none-any.whl (1.1MB)
+Collecting azure-eventgrid~=1.1 (from azure)
+  Downloading https://files.pythonhosted.org/packages/03/73/2880452058ce2ccaed5f358ad0c8c45e79cfd2725a8d5add17b12680aff5/azure_eventgrid-1.2.0-py2.py3-none-any.whl (84kB)
+Collecting azure-loganalytics~=0.1.0 (from azure)
+  Downloading https://files.pythonhosted.org/packages/54/e2/1d30270441a50efce1d52eb426710fc98269eb8bdac44ee966bbd07846da/azure_loganalytics-0.1.0-py2.py3-none-any.whl
+Collecting azure-batch~=4.1 (from azure)
+  Downloading https://files.pythonhosted.org/packages/b1/fa/1053b5dcd88e5de8e8cd70a4d7189ffad037542963ea86b518deb612c498/azure_batch-4.1.3-py2.py3-none-any.whl (314kB)
+Collecting azure-storage-blob~=1.3 (from azure)
+  Downloading https://files.pythonhosted.org/packages/f7/b7/9b20c39bf411e896d110d01f2551e6e7b397fde6eb06b07293fe29705d13/azure_storage_blob-1.4.0-py2.py3-none-any.whl (75kB)
+Collecting futures; python_version <= "2.7" (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Collecting azure-cosmosdb-nspkg>=2.0.0 (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/58/0d/1329b47e5386b0acf4e42ada2284851eff60ef3337a87e5b2dfedabbfcb1/azure_cosmosdb_nspkg-2.0.2-py2.py3-none-any.whl
+Collecting azure-storage-common~=1.1 (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/73/84/025ac436a6a1d5516d1a67887d7122b3b2ea04ba6b2d2c46fe949accb62b/azure_storage_common-1.4.0-py2.py3-none-any.whl (46kB)
+Collecting azure-common>=1.1.5 (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ac/d3/055ce7ad06459a415ff9ca210e04c6cbb51bd6564815b7c8ac34bf5a1c39/azure_common-1.1.16-py2.py3-none-any.whl
+Collecting requests (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b84b/requests-2.21.0-py2.py3-none-any.whl (57kB)
+Requirement already satisfied, skipping upgrade: python-dateutil in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from azure-cosmosdb-table~=1.0->azure) (1.5)
+Collecting cryptography (from azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/76/69/3464878ad1211f1f842e89217d907645849c5bfe20e20c695a1d7e4a7c88/cryptography-2.4.2-cp27-cp27m-macosx_10_6_intel.whl (1.5MB)
+Collecting azure-nspkg>=2.0.0 (from azure-servicemanagement-legacy~=0.20.6->azure)
+  Downloading https://files.pythonhosted.org/packages/c2/95/af354f2f415d250dafe26a5d94230558aa8cf733a9dcbf0d26cd61f5a9b8/azure_nspkg-3.0.2-py2-none-any.whl
+Collecting msrest<2.0.0,>=0.5.4 (from azure-applicationinsights~=0.1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/d5/40/70e545b7a5b0509273c6fe981118fb64e389fe013504b1c22a24fec4d1d9/msrest-0.6.2-py2.py3-none-any.whl (81kB)
+Collecting adal>=0.4.2 (from azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/2d/2f/14882b8dae0977e85577abde3065c141fb94dbb242adfb80e21797e4f7c9/adal-1.2.0-py2.py3-none-any.whl (52kB)
+Collecting cffi (from azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/7e/4a/b647e46faaa2dcfb16069b6aad2d8509982fd63710a325b8ad7db80f18be/cffi-1.11.5-cp27-cp27m-macosx_10_6_intel.whl (238kB)
+Collecting pathlib2; python_version < "3.4" (from azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/2a/46/c696dcf1c7aad917b39b875acdc5451975e3a9b4890dca8329983201c97a/pathlib2-2.3.3-py2.py3-none-any.whl
+Collecting msrestazure<2.0.0,>=0.4.32 (from azure-keyvault~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/46/ba/7870308e3d3b4b3956880eed2df20669a5690436793e6fc1442c8b73e01c/msrestazure-0.6.0-py2.py3-none-any.whl
+Collecting azure-mgmt-datalake-analytics~=0.6.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/73/e7/5d909ef5812fc31f2871f3510ef43af93157ba51be03b6f798afba7a29d8/azure_mgmt_datalake_analytics-0.6.0-py2.py3-none-any.whl (288kB)
+Collecting azure-mgmt-cosmosdb~=0.4.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/17/ed/d97a04c8c26e2432f2cf000b711daeb053e1cfbdb046bd5d070c941b4fcb/azure_mgmt_cosmosdb-0.4.1-py2.py3-none-any.whl (100kB)
+Collecting azure-mgmt-web~=0.35.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/21/04/3f2622720664c972d927fd9e58c0066e998739b7891649207765be674126/azure_mgmt_web-0.35.0-py2.py3-none-any.whl (358kB)
+Collecting azure-mgmt-sql~=0.9.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/c5/bb/219c76af961e9e6d1f5055d70c3cc06889b91375727a04367149c3aad640/azure_mgmt_sql-0.9.1-py2.py3-none-any.whl (485kB)
+Collecting azure-mgmt-commerce~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/7e/13/f421e77dd1fe3c9657a890f9c085f433fe422f54003ee03e631a8be5c4e7/azure_mgmt_commerce-1.0.1-py2.py3-none-any.whl
+Collecting azure-mgmt-datafactory~=0.6.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/cf/01/32a6ad5ad348d965f7c106d819a1f6dc613f6aa98a720ffc529ef468016b/azure_mgmt_datafactory-0.6.0-py2.py3-none-any.whl (418kB)
+Collecting azure-mgmt-billing~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/0f/24/5106287ea0f6562d965afb055e3c6c0da058f7844a70464e67bab56c6c4b/azure_mgmt_billing-0.2.0-py2.py3-none-any.whl
+Collecting azure-mgmt-rdbms~=1.2 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/0c/74/802ef2de77c77d40cdecd99ac041e42758941a237cbc70332e626ab90a15/azure_mgmt_rdbms-1.5.0-py2.py3-none-any.whl (249kB)
+Collecting azure-mgmt-policyinsights~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/19/84/7021951ae69572a19af0ff9cca1d2abf3542d35af38796656ded1be08358/azure_mgmt_policyinsights-0.1.0-py2.py3-none-any.whl (44kB)
+Collecting azure-mgmt-containerinstance~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/77/50/f7f419e0ac788d41d080d5f25daf988b993063aab3bfd90def54e93e72d7/azure_mgmt_containerinstance-1.4.0-py2.py3-none-any.whl (87kB)
+Collecting azure-mgmt-managementgroups~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/f2/50/591adac2a6cd8d77cccd38bdf5d177ad6a2e95b9217daa9a60b5d86de5cd/azure_mgmt_managementgroups-0.1.0-py2.py3-none-any.whl (59kB)
+Collecting azure-mgmt-relay~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/00/f7/f5c72bd19829cfaf9f070ec294c901ad7f98835ba9560fdad652afb1071f/azure_mgmt_relay-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-datalake-store~=0.5.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ff/ac/5685cd06dc8b245bb6b894815764a14bd62245ba4579b45148682f510fdd/azure_mgmt_datalake_store-0.5.0-py2.py3-none-any.whl (88kB)
+Collecting azure-mgmt-servicebus~=0.5.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/28/ad/9e90f8bab40a9682410e57ed08a799be113c5e470bec247b099038c6389e/azure_mgmt_servicebus-0.5.3-py2.py3-none-any.whl (112kB)
+Collecting azure-mgmt-machinelearningcompute~=0.4.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/b4/9c/f8eb81b307df4465809b182f2fe44c288eeb41c0ab54f91b61ac554998a9/azure_mgmt_machinelearningcompute-0.4.1-py2.py3-none-any.whl
+Collecting azure-mgmt-cdn~=3.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ab/17/1684f274bd57ff81b0ac9000030d5796bf88c9735a093ba8b693c39ca6fd/azure_mgmt_cdn-3.0.0-py2.py3-none-any.whl (108kB)
+Collecting azure-mgmt-containerregistry~=2.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/4e/93/982bdd8f38379405beab963ee2abf1ab42a826a57cc2157228216cfc62e4/azure_mgmt_containerregistry-2.6.0-py2.py3-none-any.whl (501kB)
+Collecting azure-mgmt-batch~=5.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/97/81/a9eb3fd2ab070159105b4cfe9640c24410ac8195286729d62bfdf871de94/azure_mgmt_batch-5.0.1-py2.py3-none-any.whl (87kB)
+Collecting azure-mgmt-devtestlabs~=2.2 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/2f/93/a64abaede2fc6a52476af8ceab9cedb368c49e948d9385cbe7cd4ce5ffff/azure_mgmt_devtestlabs-2.2.0-py2.py3-none-any.whl (194kB)
+Collecting azure-mgmt-network~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/c4/79/69f3860794e7c84bcf02deb6567901080884eb53da4838ae4d15aefe0718/azure_mgmt_network-2.4.0-py2.py3-none-any.whl (8.7MB)
+Collecting azure-mgmt-scheduler~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/e8/55/f3490698ff622244438e667e0321808e84389e69c5fb77a1d6db869d9bb7/azure_mgmt_scheduler-2.0.0-py2.py3-none-any.whl (67kB)
+Collecting azure-mgmt-managementpartner~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/98/4c/df713fcdc3710dca74b375c968b17b479c64ef19965e15b478def074a4ce/azure_mgmt_managementpartner-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-advisor~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/cb/f3/a86ba3e0784d12c8fe5cbf1f24e1b9255575a2f0892e08c46cddd0795dfd/azure_mgmt_advisor-1.0.1-py2.py3-none-any.whl
+Collecting azure-mgmt-authorization~=0.50.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/6f/17/55b974603c16be89c7a7c16bac57b7bce48527bf1bebc3f116f7215176e6/azure_mgmt_authorization-0.50.0-py2.py3-none-any.whl (81kB)
+Collecting azure-mgmt-maps~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/e4/04/c64326729e842f3eab1fd527f7582e269e4b0e5b9324a4562edaf0371953/azure_mgmt_maps-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-msi~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ae/95/b451721e38ca0feddce03ee3ce86158e208d0150253bd371207a8df4e9c5/azure_mgmt_msi-0.2.0-py2.py3-none-any.whl
+Collecting azure-mgmt-devspaces~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/f4/d3/ff9c39578f24fb4bd158a882788c7795b177cf3f23ce7cf1d8b52066a64e/azure_mgmt_devspaces-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-monitor~=0.5.2 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/6a/3b/a8b95ee25f1c209ad82ad06de39f4efbfb9dc8a8dc5da5a7a48d7897bf3e/azure_mgmt_monitor-0.5.2-py2.py3-none-any.whl (247kB)
+Collecting azure-mgmt-powerbiembedded~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/64/2b/5a69d118626a83055ce577fb6ba35c114e72f0273d0c4d943b909ee8d51e/azure_mgmt_powerbiembedded-2.0.0-py2.py3-none-any.whl
+Collecting azure-mgmt-iotcentral~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/58/4e/e2e5f2d545a46ada3705c85c45c12882a443d40f60e1a908c78058e15cf2/azure_mgmt_iotcentral-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-loganalytics~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/70/40/c9b77bf82916e963aa701fb396673f7ddc4cdab95524b6d2edf927b05630/azure_mgmt_loganalytics-0.2.0-py2.py3-none-any.whl (89kB)
+Collecting azure-mgmt-compute~=4.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/04/0e/f7cca354632c89e96e33f2773e86b6174648e7c7f0cad837e583b51450a2/azure_mgmt_compute-4.3.1-py2.py3-none-any.whl (2.5MB)
+Collecting azure-mgmt-batchai~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/d9/a5/ab796c2a490155c14f9ac4240724ca5c56723315d4dc753030712e6f2e80/azure_mgmt_batchai-2.0.0-py2.py3-none-any.whl (174kB)
+Collecting azure-mgmt-iothubprovisioningservices~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/84/ce/3500c731a5c5b31028e662aa41bc45f75301834a0c03adeacfe7ef7bd86e/azure_mgmt_iothubprovisioningservices-0.2.0-py2.py3-none-any.whl (60kB)
+Collecting azure-mgmt-resource~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/2b/2e/e79a278bedfc21308ab0c632759cfda5d7ff02d62260bcc4632449937dcf/azure_mgmt_resource-2.1.0-py2.py3-none-any.whl (757kB)
+Collecting azure-mgmt-keyvault~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/49/de/0d69aedae7c5f6428314640b65947203ab80409c12b5d4e66fb5b7a4182e/azure_mgmt_keyvault-1.1.0-py2.py3-none-any.whl (111kB)
+Collecting azure-mgmt-eventgrid~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/54/5b/e91e616021ae9be0019c9c19cffb92b97d787246ca51cfcc0b0a0c6da77a/azure_mgmt_eventgrid-1.0.0-py2.py3-none-any.whl (51kB)
+Collecting azure-mgmt-iothub~=0.5.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/19/d6/b422df467b3d7f4e2975b590fbf6e12aaae0a497c7d080b4955a6a6d794a/azure_mgmt_iothub-0.5.0-py2.py3-none-any.whl (102kB)
+Collecting azure-mgmt-notificationhubs~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/b1/7f/283067cf30dd72707bbdfa608838509663328e533d7e362f7630c785679c/azure_mgmt_notificationhubs-2.0.0-py2.py3-none-any.whl (71kB)
+Collecting azure-mgmt-servicefabric~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/6e/06/fafe8b5d881cfa68927e61557c8419dcfacb93e07f4ab17cc60959707a53/azure_mgmt_servicefabric-0.2.0-py2.py3-none-any.whl (142kB)
+Collecting azure-mgmt-storage~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/67/5b/15e6a8109af53e4c2228142ea816532036700757d035fc1b9cd0f6a63b02/azure_mgmt_storage-2.0.0-py2.py3-none-any.whl (558kB)
+Collecting azure-mgmt-eventhub~=2.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ad/bf/2f455fc65898b99f9a504de508f81cbf73d0797b3233a15bf7a1d2ff6606/azure_mgmt_eventhub-2.2.0-py2.py3-none-any.whl (67kB)
+Collecting azure-mgmt-redis~=5.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/90/a7/42342a984b2916972c5c5e24df94e3cd5e4377a8dc465a83415706d9be6f/azure_mgmt_redis-5.0.0-py2.py3-none-any.whl (43kB)
+Collecting azure-mgmt-dns~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/c7/d7/0f986a64b06db93cf29b76f9a188f5778eb959624a00ed6aedc335ee58d2/azure_mgmt_dns-2.1.0-py2.py3-none-any.whl (134kB)
+Collecting azure-mgmt-applicationinsights~=0.1.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/30/61/1d95a5ef3a9119a0d375d8670129375515de20e20409612e9671c99bd19f/azure_mgmt_applicationinsights-0.1.1-py2.py3-none-any.whl (42kB)
+Collecting azure-mgmt-recoveryservicesbackup~=0.3.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/c5/af/13b10d76bc0ff9188c9e5cd9f2726a5745029b76125938491f9abac5399d/azure_mgmt_recoveryservicesbackup-0.3.0-py2.py3-none-any.whl (568kB)
+Collecting azure-mgmt-recoveryservices~=0.3.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/fd/7f/80327a27e03473101afb136e872279ad1386adf1bac14a58a9f839cd8352/azure_mgmt_recoveryservices-0.3.0-py2.py3-none-any.whl (70kB)
+Collecting azure-mgmt-trafficmanager~=0.50.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ed/4f/c322d72dc92dde543471bc23f9ac0eb6b9d0dc2441bb5ce938250040e307/azure_mgmt_trafficmanager-0.50.0-py2.py3-none-any.whl (52kB)
+Collecting azure-mgmt-hanaonazure~=0.1.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/f3/1b/50d300ae02158ab092f923132050b56c148f1b784c7b594d3275d4449769/azure_mgmt_hanaonazure-0.1.1-py2.py3-none-any.whl
+Collecting azure-mgmt-media~=1.0.0rc2 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/65/2e/6d9649bd5645ac32a179adfea5707f640fc51a57e493c27f0ab575789e85/azure_mgmt_media-1.0.0-py2.py3-none-any.whl (335kB)
+Collecting azure-mgmt-consumption~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/11/f4/2db9557494dfb17ff3edeae5726981143a7baace17df3712b189e343bd8c/azure_mgmt_consumption-2.0.0-py2.py3-none-any.whl (46kB)
+Collecting azure-mgmt-containerservice~=4.2 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/82/86/f15f9d927e0c4a7fb2b0aa79eea48533889d5e2417cde59e426de3076755/azure_mgmt_containerservice-4.3.0-py2.py3-none-any.whl (205kB)
+Collecting azure-mgmt-cognitiveservices~=3.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/8d/c8/222ea2f533c6b8f8656f3091101b4c3aa32c162d2a609d07d1ae00172515/azure_mgmt_cognitiveservices-3.0.0-py2.py3-none-any.whl (58kB)
+Collecting azure-mgmt-search~=2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/e2/52/46a5984eca50393057d4e760b9ef4adc5d6b8738f333427632991c6f3739/azure_mgmt_search-2.0.0-py2.py3-none-any.whl
+Collecting azure-mgmt-reservations~=0.2.1 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/a9/2b/e0edb8dbe85e447005cde508b869e564f58270f631219f036d8ab71184f9/azure_mgmt_reservations-0.2.1-py2.py3-none-any.whl (50kB)
+Collecting azure-mgmt-subscription~=0.2.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/27/72/f63f72d9c27659f96aae287f7ba67c9ba2877213c2c10d8b797e0dee5059/azure_mgmt_subscription-0.2.0-py2.py3-none-any.whl (40kB)
+Collecting azure-mgmt-logic~=3.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/88/98/693c515e97043520f5cebf1ecae7bf198df100f5f9870b53d4be3bcaa5ce/azure_mgmt_logic-3.0.0-py2.py3-none-any.whl (303kB)
+Collecting azure-mgmt-marketplaceordering~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/a8/cb/13502fdbaf520d08fb280eb31ecfe5d926b9cf92259c22280bbde96b307d/azure_mgmt_marketplaceordering-0.1.0-py2.py3-none-any.whl
+Collecting azure-mgmt-signalr~=0.1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/10/32/379137548a4c6e4dfd15da6b1c476f2b1af52e8d7fe243fdac9ea2064427/azure_mgmt_signalr-0.1.1-py2.py3-none-any.whl (49kB)
+Collecting azure-mgmt-datamigration~=1.0 (from azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/8b/4f/7b149487e77d94e701288e1d0b066a7d522bdfe8595e992b5d39dfb00f80/azure_mgmt_datamigration-1.0.0-py2.py3-none-any.whl (185kB)
+Collecting azure-storage-nspkg; python_version < "3.0" (from azure-storage-common~=1.1->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ba/f6/054ace7b01c6c21b3b95a83c3997f7d6539d939a2c08c4f27f779128a030/azure_storage_nspkg-3.1.0-py2.py3-none-any.whl
+Collecting urllib3<1.25,>=1.21.1 (from requests->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+Collecting certifi>=2017.4.17 (from requests->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+Collecting chardet<3.1.0,>=3.0.2 (from requests->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+Collecting idna<2.9,>=2.5 (from requests->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl (58kB)
+Collecting enum34; python_version < "3" (from cryptography->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Collecting asn1crypto>=0.21.0 (from cryptography->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/ea/cd/35485615f45f30a510576f1a56d1e0a7ad7bd8ab5ed7cdc600ef7cd06222/asn1crypto-0.24.0-py2.py3-none-any.whl (101kB)
+Collecting ipaddress; python_version < "3" (from cryptography->azure-cosmosdb-table~=1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/fc/d0/7fc3a811e011d4b388be48a0e381db8d990042df54aa4ef4599a31d39853/ipaddress-1.0.22-py2.py3-none-any.whl
+Requirement already satisfied, skipping upgrade: six>=1.4.1 in /Library/Python/2.7/site-packages (from cryptography->azure-cosmosdb-table~=1.0->azure) (1.12.0)
+Collecting requests-oauthlib>=0.5.0 (from msrest<2.0.0,>=0.5.4->azure-applicationinsights~=0.1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/94/e7/c250d122992e1561690d9c0f7856dadb79d61fd4bdd0e598087dce607f6c/requests_oauthlib-1.0.0-py2.py3-none-any.whl
+Collecting typing; python_version < "3.5" (from msrest<2.0.0,>=0.5.4->azure-applicationinsights~=0.1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/cc/3e/29f92b7aeda5b078c86d14f550bf85cff809042e3429ace7af6193c3bc9f/typing-3.6.6-py2-none-any.whl
+Collecting isodate>=0.6.0 (from msrest<2.0.0,>=0.5.4->azure-applicationinsights~=0.1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/9b/9f/b36f7774ff5ea8e428fdcfc4bb332c39ee5b9362ddd3d40d9516a55221b2/isodate-0.6.0-py2.py3-none-any.whl (45kB)
+Collecting PyJWT>=1.0.0 (from adal>=0.4.2->azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/87/8b/6a9f14b5f781697e51259d81657e6048fd31a113229cf346880bb7545565/PyJWT-1.7.1-py2.py3-none-any.whl
+Collecting pycparser (from cffi->azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/68/9e/49196946aee219aead1290e00d1e7fdeab8567783e83e1b9ab5585e6206a/pycparser-2.19.tar.gz (158kB)
+Collecting scandir; python_version < "3.5" (from pathlib2; python_version < "3.4"->azure-datalake-store~=0.0.18->azure)
+  Downloading https://files.pythonhosted.org/packages/16/2a/557af1181e6b4e30254d5a6163b18f5053791ca66e251e77ab08887e8fe3/scandir-1.9.0.tar.gz
+Collecting azure-mgmt-datalake-nspkg>=2.0.0 (from azure-mgmt-datalake-analytics~=0.6.0->azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/76/e2/4271ab409ff3bac77ae2843c30590868db42715a75658f8a9da229b7ac98/azure_mgmt_datalake_nspkg-3.0.1-py2-none-any.whl
+Collecting azure-mgmt-nspkg>=2.0.0 (from azure-mgmt-cosmosdb~=0.4.1->azure-mgmt~=4.0->azure)
+  Downloading https://files.pythonhosted.org/packages/a1/6e/464d039ec6184234b188d6a9d199e658cce86b38afe4db0e8edd1629f3f6/azure_mgmt_nspkg-3.0.2-py2-none-any.whl
+Collecting oauthlib>=0.6.2 (from requests-oauthlib>=0.5.0->msrest<2.0.0,>=0.5.4->azure-applicationinsights~=0.1.0->azure)
+  Downloading https://files.pythonhosted.org/packages/e6/d1/ddd9cfea3e736399b97ded5c2dd62d1322adef4a72d816f1ed1049d6a179/oauthlib-2.1.0-py2.py3-none-any.whl (121kB)
+Installing collected packages: futures, azure-nspkg, azure-cosmosdb-nspkg, azure-storage-nspkg, azure-common, urllib3, certifi, chardet, idna, requests, enum34, pycparser, cffi, asn1crypto, ipaddress, cryptography, azure-storage-common, azure-cosmosdb-table, azure-servicemanagement-legacy, azure-storage-queue, oauthlib, requests-oauthlib, typing, isodate, msrest, azure-applicationinsights, PyJWT, adal, scandir, pathlib2, azure-datalake-store, msrestazure, azure-keyvault, azure-servicebus, azure-storage-file, azure-mgmt-nspkg, azure-mgmt-datalake-nspkg, azure-mgmt-datalake-analytics, azure-mgmt-cosmosdb, azure-mgmt-web, azure-mgmt-sql, azure-mgmt-commerce, azure-mgmt-datafactory, azure-mgmt-billing, azure-mgmt-rdbms, azure-mgmt-policyinsights, azure-mgmt-containerinstance, azure-mgmt-managementgroups, azure-mgmt-relay, azure-mgmt-datalake-store, azure-mgmt-servicebus, azure-mgmt-machinelearningcompute, azure-mgmt-cdn, azure-mgmt-containerregistry, azure-mgmt-batch, azure-mgmt-devtestlabs, azure-mgmt-network, azure-mgmt-scheduler, azure-mgmt-managementpartner, azure-mgmt-advisor, azure-mgmt-authorization, azure-mgmt-maps, azure-mgmt-msi, azure-mgmt-devspaces, azure-mgmt-monitor, azure-mgmt-powerbiembedded, azure-mgmt-iotcentral, azure-mgmt-loganalytics, azure-mgmt-compute, azure-mgmt-batchai, azure-mgmt-iothubprovisioningservices, azure-mgmt-resource, azure-mgmt-keyvault, azure-mgmt-eventgrid, azure-mgmt-iothub, azure-mgmt-notificationhubs, azure-mgmt-servicefabric, azure-mgmt-storage, azure-mgmt-eventhub, azure-mgmt-redis, azure-mgmt-dns, azure-mgmt-applicationinsights, azure-mgmt-recoveryservicesbackup, azure-mgmt-recoveryservices, azure-mgmt-trafficmanager, azure-mgmt-hanaonazure, azure-mgmt-media, azure-mgmt-consumption, azure-mgmt-containerservice, azure-mgmt-cognitiveservices, azure-mgmt-search, azure-mgmt-reservations, azure-mgmt-subscription, azure-mgmt-logic, azure-mgmt-marketplaceordering, azure-mgmt-signalr, azure-mgmt-datamigration, azure-mgmt, azure-graphrbac, azure-servicefabric, azure-eventgrid, azure-loganalytics, azure-batch, azure-storage-blob, azure
+  Running setup.py install for pycparser: started
+    Running setup.py install for pycparser: finished with status 'done'
+  Running setup.py install for scandir: started
+    Running setup.py install for scandir: finished with status 'done'
+Successfully installed PyJWT-1.7.1 adal-1.2.0 asn1crypto-0.24.0 azure-4.0.0 azure-applicationinsights-0.1.0 azure-batch-4.1.3 azure-common-1.1.16 azure-cosmosdb-nspkg-2.0.2 azure-cosmosdb-table-1.0.5 azure-datalake-store-0.0.39 azure-eventgrid-1.2.0 azure-graphrbac-0.40.0 azure-keyvault-1.1.0 azure-loganalytics-0.1.0 azure-mgmt-4.0.0 azure-mgmt-advisor-1.0.1 azure-mgmt-applicationinsights-0.1.1 azure-mgmt-authorization-0.50.0 azure-mgmt-batch-5.0.1 azure-mgmt-batchai-2.0.0 azure-mgmt-billing-0.2.0 azure-mgmt-cdn-3.0.0 azure-mgmt-cognitiveservices-3.0.0 azure-mgmt-commerce-1.0.1 azure-mgmt-compute-4.3.1 azure-mgmt-consumption-2.0.0 azure-mgmt-containerinstance-1.4.0 azure-mgmt-containerregistry-2.6.0 azure-mgmt-containerservice-4.3.0 azure-mgmt-cosmosdb-0.4.1 azure-mgmt-datafactory-0.6.0 azure-mgmt-datalake-analytics-0.6.0 azure-mgmt-datalake-nspkg-3.0.1 azure-mgmt-datalake-store-0.5.0 azure-mgmt-datamigration-1.0.0 azure-mgmt-devspaces-0.1.0 azure-mgmt-devtestlabs-2.2.0 azure-mgmt-dns-2.1.0 azure-mgmt-eventgrid-1.0.0 azure-mgmt-eventhub-2.2.0 azure-mgmt-hanaonazure-0.1.1 azure-mgmt-iotcentral-0.1.0 azure-mgmt-iothub-0.5.0 azure-mgmt-iothubprovisioningservices-0.2.0 azure-mgmt-keyvault-1.1.0 azure-mgmt-loganalytics-0.2.0 azure-mgmt-logic-3.0.0 azure-mgmt-machinelearningcompute-0.4.1 azure-mgmt-managementgroups-0.1.0 azure-mgmt-managementpartner-0.1.0 azure-mgmt-maps-0.1.0 azure-mgmt-marketplaceordering-0.1.0 azure-mgmt-media-1.0.0 azure-mgmt-monitor-0.5.2 azure-mgmt-msi-0.2.0 azure-mgmt-network-2.4.0 azure-mgmt-notificationhubs-2.0.0 azure-mgmt-nspkg-3.0.2 azure-mgmt-policyinsights-0.1.0 azure-mgmt-powerbiembedded-2.0.0 azure-mgmt-rdbms-1.5.0 azure-mgmt-recoveryservices-0.3.0 azure-mgmt-recoveryservicesbackup-0.3.0 azure-mgmt-redis-5.0.0 azure-mgmt-relay-0.1.0 azure-mgmt-reservations-0.2.1 azure-mgmt-resource-2.1.0 azure-mgmt-scheduler-2.0.0 azure-mgmt-search-2.0.0 azure-mgmt-servicebus-0.5.3 azure-mgmt-servicefabric-0.2.0 azure-mgmt-signalr-0.1.1 azure-mgmt-sql-0.9.1 azure-mgmt-storage-2.0.0 azure-mgmt-subscription-0.2.0 azure-mgmt-trafficmanager-0.50.0 azure-mgmt-web-0.35.0 azure-nspkg-3.0.2 azure-servicebus-0.21.1 azure-servicefabric-6.3.0.0 azure-servicemanagement-legacy-0.20.6 azure-storage-blob-1.4.0 azure-storage-common-1.4.0 azure-storage-file-1.4.0 azure-storage-nspkg-3.1.0 azure-storage-queue-1.4.0 certifi-2018.11.29 cffi-1.11.5 chardet-3.0.4 cryptography-2.4.2 enum34-1.1.6 futures-3.2.0 idna-2.8 ipaddress-1.0.22 isodate-0.6.0 msrest-0.6.2 msrestazure-0.6.0 oauthlib-2.1.0 pathlib2-2.3.3 pycparser-2.19 requests-2.21.0 requests-oauthlib-1.0.0 scandir-1.9.0 typing-3.6.6 urllib3-1.24.1

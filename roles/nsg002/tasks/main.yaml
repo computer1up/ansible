@@ -1,0 +1,18 @@
+---
+- name: Create Network Security Group that allows SSH
+  azure_rm_securitygroup:
+    resource_group: zuyrg00006
+    name: NW-NSG-001
+    rules:
+      - name: WinRM
+        protocol: Tcp
+        destination_port_range: 5985
+        access: Allow
+        priority: 101
+        direction: Inbound
+      - name: RDP
+        protocol: Tcp
+        destination_port_range: 3389
+        access: Allow
+        priority: 102
+        direction: Inbound

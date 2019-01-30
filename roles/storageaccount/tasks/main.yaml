@@ -1,0 +1,6 @@
+---
+- name: Create storage account
+  azure_rm_storageaccount:
+    resource_group: zuyrg00006
+    name: nwstorage02
+    account_type: Standard_LRS

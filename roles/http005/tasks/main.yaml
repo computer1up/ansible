@@ -1,0 +1,27 @@
+---
+- name: include vars
+  include_vars:
+    file: ~/Documents/ansible/vars/secret.yaml
+- name: Create virtual network inteface card
+  azure_rm_networkinterface:
+    resource_group: zuyrg00006
+    name: NW-VNIC-004
+    virtual_network: NW-VNET-001
+    subnet: Front-end
+    security_group: NW-NSG-001
+- name: Create VM (Webserver 004)
+  azure_rm_virtualmachine:
+    resource_group: zuyrg00006
+    name: NW-HTTP-S004
+    os_type: Windows
+    vm_size: Standard_B2s
+    storage_account: nwstorage02
+    storage_container: nw-http-s004
+    admin_username: gr00006admin
+    admin_password: "{{ adminpass }}"
+    network_interfaces: NW-VNIC-004
+    image:
+      offer: WindowsServer
+      publisher: MicrosoftWindowsServer
+      sku: '2016-Datacenter'
+      version: latest

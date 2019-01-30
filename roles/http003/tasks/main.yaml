@@ -1,0 +1,35 @@
+---
+- name: include vars
+  include_vars:
+    file: ~/Documents/ansible/vars/secret.yaml
+- name: Create virtual network inteface card
+  azure_rm_networkinterface:
+    resource_group: zuyrg00006
+    name: NW-VNIC-001
+    virtual_network: NW-VNET-001
+    subnet: Front-end
+    security_group: NW-NSG-001
+  register: output_ip_configurations
+- name: Dump private IP for VM which will be created
+  debug:
+    msg: "The private IP is '{{output_ip_configurations.state.ip_configurations.0.private_ip_address}}'."
+- name: add host to memory
+  add_host:
+    name: "{{output_ip_configurations.state.ip_configurations.0.private_ip_address}}"
+    groups: webservers
+- name: Create VM (Webserver 003)
+  azure_rm_virtualmachine:
+    resource_group: zuyrg00006
+    name: NW-STEP-S001
+    os_type: Windows
+    vm_size: Standard_B2s
+    storage_account: nwstorage02
+    storage_container: nw-step-001
+    admin_username: gr00006admin
+    admin_password: "{{ adminpass }}"
+    network_interfaces: NW-VNIC-001
+    image:
+      offer: WindowsServer
+      publisher: MicrosoftWindowsServer
+      sku: '2016-Datacenter'
+      version: latest

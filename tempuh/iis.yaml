@@ -1,0 +1,15 @@
+---
+- hosts: win_servers
+  sudo: yes
+  sudo_user: administrator
+  tasks:
+    - name: install iis-server 
+      win_feature:
+	    name: Web-Server
+	    include_sub_features: True 
+	  state: present
+	  register: win_feature_installed
+	- name: Reboot if required 
+	  win_reboot:
+	    when:
+	      win_feature_installed.reboot_required
