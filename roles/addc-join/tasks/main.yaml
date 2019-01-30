@@ -1,0 +1,12 @@
+---
+- name: include vars
+  include_vars:
+    file: ~/Documents/ansible/vars/secret.yaml
+- win_domain_membership:
+    dns_domain_name: newways02.com
+    domain_admin_user: newways02/remy
+    domain_admin_password: "{{rdpass}}"
+    state: domain
+  register: domain_state
+- win_reboot:
+  when: domain_state.reboot_required

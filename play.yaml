@@ -12,7 +12,14 @@
     - role: subnet-fr
     - role: http003
     - role: http004
-- name: IIS install
+    - role: addc-server
+    - role: sql
+- name: ADDC Install
+  hosts: addc
+  roles:
+    - role: addc-software
+- name: IIS Install
   hosts: webservers
   roles:
-    - role: iis
+    - roles: addc-join
+    - roles: iis
