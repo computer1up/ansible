@@ -1,7 +1,8 @@
 ---
-- name: install iis-server
+- name: include vars
   include_vars:
     file: vars/secret.yaml
+- name: install iis-server
   ansible_user: gr06admin
   ansible_password: "{{ adminpass }}"
   ansible_connection: winrm
