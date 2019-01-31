@@ -11,5 +11,10 @@
     include_sub_features: True
     state: present
   register: win_feature_installed
+- name: reboot
+  ansible_user: gr06admin
+  ansible_password: "{{ adminpass }}"
+  ansible_connection: winrm
+  ansible_winrm_transport: basic
   win_reboot:
     when: win_feature_installed.reboot_required
