@@ -1,7 +1,7 @@
 ---
 - name: include vars
   include_vars:
-    file: ~/Documents/ansible/vars/secret.yaml
+    file: vars/secret.yaml
 - win_domain_membership:
     dns_domain_name: newways02.com
     domain_admin_user: newways02/remy

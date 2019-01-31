@@ -17,11 +17,13 @@
     resource_group: zuyrg00006
     name: NW-VNIC-006
     virtual_network: NW-VNET-001
-    subnet: Front-end
+    subnet: Back-end
     security_group: NW-NSG-002
     ip_configurations:
       - name: ansconf
         public_ip_address_name: NW-PUB-ANS002
+        private_ip_allocation_method: static
+        private_ip_address: 10.1.2.10
 - name: Create VM
   azure_rm_virtualmachine:
     resource_group: zuyrg00006
@@ -38,18 +40,3 @@
       publisher: Canonical
       sku: '18.04-LTS'
       version: latest
-- name: Deploy ansible and playbook
-  hosts: ans
-  sudo: yes
-  tasks:
-    - name: apt install ansible stuff and git
-      apt: name=ansible update_cache=yes state=latest
-      apt: name=git update_cache=yes state=latest
-    - name: Clone a public repository into ansible.
-      git:
-        repo: git@github.com:computer1up/ansible.git
-        version: master
-        dest: /home/gr06admin/ansible
-        accept_hostkey: yes
-        key_file: /home/gr06admin/.ssh/id_rsa
-      become_user: gr06admin

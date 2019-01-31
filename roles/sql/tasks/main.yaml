@@ -1,7 +1,7 @@
 ---
 - name: include vars
   include_vars:
-    file: ~/Documents/ansible/vars/secret.yaml
+    file: vars/secret.yaml
 - name: Create (or update) SQL Server
   azure_rm_sqlserver:
     resource_group: zuyrg00006

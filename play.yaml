@@ -16,6 +16,10 @@
     - role: ansible-server
     - role: addc-server
     - role: sql
+- name: ansible Install
+  hosts: ans
+  roles:
+    - role: ansible-software
 - name: ADDC Install
   hosts: addc
   roles:
