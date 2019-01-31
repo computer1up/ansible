@@ -2,8 +2,6 @@
 - name: Main playbook
   hosts: localhost
   connection: local
-  include_vars:
-    file: vars/secret.yaml
   roles:
     - role: vnet
     - role: nsg001
@@ -25,6 +23,8 @@
     - role: ansible-software
 - name: ADDC Install
   hosts: addc
+  include_vars:
+    file: vars/secret.yaml
   ansible_user: gr06admin
   ansible_password: "{{ adminpass }}"
   ansible_connection: winrm
@@ -32,6 +32,8 @@
   roles:
     - role: addc-software
 - name: IIS Install
+  include_vars:
+    file: vars/secret.yaml
   ansible_user: gr06admin
   ansible_password: "{{ adminpass }}"
   ansible_connection: winrm
