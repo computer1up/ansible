@@ -7,7 +7,7 @@
     azure_rm_publicipaddress:
       resource_group: zuyrg00006
       allocation_method: Static
-      name: NW-PUB-ANS002
+      name: NW-PUB-ANS003
     register: output_ip_address
   - name: Dump public IP for VM which will be created
     debug:
@@ -19,24 +19,24 @@
   - name: Create virtual network inteface card
     azure_rm_networkinterface:
       resource_group: zuyrg00006
-      name: NW-VNIC-006
+      name: NW-VNIC-007
       virtual_network: NW-VNET-001
       subnet: Front-end
-      security_group: NW-NSG-002
+      security_group: NW-NSG-001
       ip_configurations:
         - name: ansconf
-          public_ip_address_name: NW-PUB-ANS002
+          public_ip_address_name: NW-PUB-ANS003
   - name: Create VM
     azure_rm_virtualmachine:
       resource_group: zuyrg00006
-      name: NW-ANS-002
+      name: NW-ANS-003
       vm_size: Standard_B1s
       admin_username: gr06admin
       ssh_password_enabled: false
       ssh_public_keys:
         - path: /home/gr06admin/.ssh/authorized_keys
-          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCwW2vYA4yTvtZmCPYQNEbOD53ayTXJn6Jb3+Lm7psxhovXdo2ydLQHOfsILlHcO7dSofc/nytXzZR25q/P1tIoV58M11oR46PbdbNSoeRtAoiXI7YvQKtCbJRXgABkWzgGTdpE8BDE2ssG/NoCJHLK8iY+cCWGpDnDUVad4GvyDw== remydoon@rd-MacBook-Pro.local
-      network_interfaces: NW-VNIC-006
+          key_data: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD9h3qw5Bdqgp/1aA40GtibL3uNelLpIKB/g8wwLwfmwPYI3jWk9R1m3ne9/jzSw4HbgAkITwXUr4UBugGI7/JsMbwBn+RSJNB2HNiuhLstqtq5VcgNrplmmYWNr5MqT/tAfX4mXBum5NZ5i83HAihKSV5Yit6KDmc2Mn5s6qWudIiY2N9xZZf7iLm2FSDsCEY0LtG7FhxW5N1snZQGAZQJG9rsRJuVSVSpSSwQOy1nCF9RkqXcIiuzCXjuUE8fnvHiJksjECCiioaqiapDw25GQHksWAmlexdFKxnW214xuRz6pPqkvdu4eknPorrDNySnwXENIW5jINsIteLaV1xX remydoon@rd-MacBook-Pro-9.local
+      network_interfaces: NW-VNIC-007
       image:
         offer: UbuntuServer
         publisher: Canonical
@@ -45,7 +45,15 @@
 - name: Deploy ansible and playbook
   hosts: ans
   sudo: yes
+  remote_user: gr06admin
   tasks:
+    - name: example copying file with owner and permissions
+      copy:
+        src: ~/.ssh/id_rsa
+        dest: /home/gr06admin/.ssh/id_rsb
+        owner: gr06admin
+        group: gr06admin
+        mode: '400'
     - name: apt install ansible stuff and git
       apt: name=ansible update_cache=yes state=latest
       apt: name=git update_cache=yes state=latest
@@ -55,5 +63,5 @@
         version: master
         dest: /home/gr06admin/ansible
         accept_hostkey: yes
-        key_file: /home/gr06admin/.ssh/id_rsa
-      become_user: gr06admin
+        key_file: /home/gr06admin/.ssh/id_rsb
+      sudo_user: gr06admin
