@@ -10,8 +10,10 @@
     - role: storageaccount
     - role: subnet-ba
     - role: subnet-fr
+    - role: lb
     - role: http003
     - role: http004
+    - role: ansible-server
     - role: addc-server
     - role: sql
 - name: ADDC Install
