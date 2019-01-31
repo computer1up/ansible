@@ -9,12 +9,6 @@
     virtual_network: NW-VNET-001
     subnet: Front-end
     security_group: NW-NSG-001
-    ip_configurations:
-      - name: NW-IPCONF-004
-        load_balancer_backend_address_pools:
-          - "{{ nwload003.state.backend_address_pools[0].id }}"
-          - name: nwpool003
-          - load_balancer: nwload003
   register: output_ip_configurations
 - name: Dump private IP for VM which will be created
   debug:

@@ -13,7 +13,7 @@
     - role: lb
     - role: http003
     - role: http004
-    - role: ansible-server
+#    - role: ansible-server
     - role: addc-server
     - role: sql
 - name: ansible Install
