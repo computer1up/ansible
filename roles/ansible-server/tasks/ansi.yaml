@@ -59,9 +59,9 @@
       apt: name=git update_cache=yes state=latest
     - name: Clone a public repository into ansible.
       git:
-        repo: git@github.com:computer1up/ansible.git
+        repo: http://'{{gituser}}':'{{gitpass}}'@github.com/computer1up/ansible
         version: master
         dest: /home/gr06admin/ansible
-        accept_hostkey: yes
-        key_file: /home/gr06admin/.ssh/id_rsb
+        #accept_hostkey: yes
+        #key_file: /home/gr06admin/.ssh/id_rsa
       sudo_user: gr06admin

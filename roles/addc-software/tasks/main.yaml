@@ -13,10 +13,20 @@
     include_sub_features: yes
     state: present
   register: result
+- name: Create new forest
+  ansible_user: gr06admin
+  ansible_password: "{{ adminpass }}"
+  ansible_connection: winrm
+  ansible_winrm_transport: basic
   win_domain:
     dns_domain_name: newways02.com
     safe_mode_password: "{{adminpass}}"
   register: result
+- name: Reboot after creation
+  ansible_user: gr06admin
+  ansible_password: "{{ adminpass }}"
+  ansible_connection: winrm
+  ansible_winrm_transport: basic
   win_reboot:
     msg: "Server config in progress; rebooting..."
   when: result.reboot_required
