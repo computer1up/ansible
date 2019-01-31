@@ -18,6 +18,7 @@
     - role: sql
 - name: ansible Install
   hosts: ans
+  sudo: yes
   roles:
     - role: ansible-software
 - name: ADDC Install
