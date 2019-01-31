@@ -10,8 +10,8 @@
     subnet: Front-end
     security_group: NW-NSG-001
     ip_configurations:
-      name: NW-IPCONF-003
-      load_balancer_backend_address_pools: NW-POOL-003
+      - name: NW-IPCONF-003
+        load_balancer_backend_address_pools: NW-POOL-003
   register: output_ip_configurations
 - name: Dump private IP for VM which will be created
   debug:
