@@ -23,21 +23,9 @@
     - role: ansible-software
 - name: ADDC Install
   hosts: addc
-  include_vars:
-    file: vars/secret.yaml
-  ansible_user: gr06admin
-  ansible_password: "{{ adminpass }}"
-  ansible_connection: winrm
-  ansible_winrm_transport: basic
   roles:
     - role: addc-software
 - name: IIS Install
-  include_vars:
-    file: vars/secret.yaml
-  ansible_user: gr06admin
-  ansible_password: "{{ adminpass }}"
-  ansible_connection: winrm
-  ansible_winrm_transport: basic
   hosts: webservers
   roles:
     - role: addc-join
