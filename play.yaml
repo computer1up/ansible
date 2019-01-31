@@ -2,6 +2,8 @@
 - name: Main playbook
   hosts: localhost
   connection: local
+  include_vars:
+    file: vars/secret.yaml
   roles:
     - role: vnet
     - role: nsg001
@@ -21,9 +23,6 @@
   sudo: yes
   roles:
     - role: ansible-software
-- name: include vars
-  include_vars:
-    file: vars/secret.yaml
 - name: ADDC Install
   hosts: addc
   ansible_user: gr06admin
