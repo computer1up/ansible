@@ -1,4 +1,7 @@
 ---
+- name: include secret
+  include_vars:
+    file: vars/secret.yaml
 - name: Main playbook
   hosts: localhost
   connection: local
