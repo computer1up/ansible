@@ -1,0 +1,4 @@
+ansible_user: gr06admin
+ansible_password: "{{ adminpass }}"
+ansible_connection: winrm
+ansible_winrm_transport: basic
